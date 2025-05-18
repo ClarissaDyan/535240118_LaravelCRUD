@@ -32,9 +32,9 @@ Route::group(['middleware' => 'auth'], function () {
 //     return view('welcome');
 // });
 
-// // Route::get('/about', function (){
-// //     echo "Halaman About";
-// // });
+// Route::get('/about', function (){
+//     echo "Halaman About";
+// });
 
 // Route::get('/mahasiswa', function (){
 //     echo "Halaman Mahasiswa";
@@ -56,9 +56,9 @@ Route::group(['middleware' => 'auth'], function () {
 //     echo 'User ID: '.$id;
 // })->where('id', '[0-9]+');
 
-// Route::get('/about', function(){
-//     return view('about');
-// });
+Route::get('/about', function(){
+    return view('about');
+});
 
 // Route::get('/',function (){
 //     return view('home');
